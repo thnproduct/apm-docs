@@ -16,7 +16,7 @@ Microsoft.Extensions.Logging version 2.2.0+ are supported.
 
 Thundra Logger is built on top of [Microsoft's logging extension](https://www.nuget.org/packages/Microsoft.Extensions.Logging/) with ASP.NET. Therefore, when you create a new instance of `LoggerFactory()`, you must add the Thundra logger as well: `LoggerFactory().AddThundraProvider()`. After that, you may create a logger by using the `CreateLogger<FunctionName>()` method of the Logger Factory and then start to log with the levels present.
 
-According to the [LoggerExtension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loggerextensions?view=aspnetcore-2.2) the following levels are present:
+According to the [LoggerExtension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loggerextensions?view=aspnetcore-3.1) the following levels are present:
 
 * LogCritical
 * LogDebug

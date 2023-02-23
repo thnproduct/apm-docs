@@ -1,13 +1,5 @@
 # Integration Options for .NET SDK
 
-{% hint style="warning" %}
-**Upgrading from v1.x to 2.x**
-
-In **v2.x**, we've made some changes to our agent as we've started to support **.NET Core 2.1** applications as well.\
-\
-If you are using the Thundra agent **v1.x** already, make sure to check what needs to be changed [**here**](broken-reference).
-{% endhint %}
-
 {% tabs %}
 {% tab title="Serverless Framework" %}
 #### **Serverless Framework**
@@ -50,56 +42,6 @@ functions:
 {% endcode %}
 
 Using this method, you can connect Thundra to your functions by modifying the configuration files without needing to change your code. The ThundraProxy class will call the actual handler as soon as it receives the request.
-{% endtab %}
-
-{% tab title="Serverless Plugin" %}
-#### Serverless Plugin
-
-**Step 1: Install Thundra’s Serverless Plugin**
-
-```bash
-npm install serverless-plugin-thundra
-```
-
-**Step 2: Add Thundra's Serverless Plugin in the serverless.yml File**\
-\
-After installing Thundra’s serverless plugin, you need to add it under the plugins section of your serverless.yml file in order to specify it as a plugin for your serverless environment.
-
-{% code title="serverless.yml" %}
-```yaml
-plugins:  
-    - serverless-plugin-thundra
-```
-{% endcode %}
-
-**Step 3: Add `thundra` Component to Custom**
-
-Add the `thundra` component under custom with the apiKey beneath that, as shown below:
-
-{% code title="serverless.yml" %}
-```yaml
-custom:
-    thundra:
-        apiKey: <YOUR THUNDRA API KEY>
-```
-{% endcode %}
-
-**Step 4: Deploy and Test the App**
-
-```bash
-serverless deploy
-serverless invoke --function functionName
-```
-
-**Step 5: Monitor Your Function with Thundra**
-
-After generating your first invocation, the “Next” button will appear in the Invocation Monitor bar. Simply click the button to see monitoring data from your invocation.
-
-{% hint style="info" %}
-For more information, visit the [Thundra Serverless Plugin](https://docs.thundra.io/deployment-integrations/serverless-framework) page.
-{% endhint %}
-
-
 {% endtab %}
 
 {% tab title="AWS SAM" %}

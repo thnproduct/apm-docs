@@ -1,9 +1,5 @@
 # Integration Options for .NET SDK in Containers and VMs
 
-{% hint style="warning" %}
-The Thundra agent only supports applications with **.NET Core 2.1** version.
-{% endhint %}
-
 #### Step 1: Add Thundra NuGet package
 
 ```bash
