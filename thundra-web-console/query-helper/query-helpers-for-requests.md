@@ -28,7 +28,7 @@ Request filters allow you to filter your API requests via request property param
 
 Statistical filters allow you to filter through your API requests using exact numerical values related to the various performances of each request. Unlike statistical filters in the Query Helper for functions, the statistical filters that you can set for requests are quite simple.&#x20;
 
-![](<../../.gitbook/assets/image (83).png>)
+![](<../../.gitbook/assets/image (14) (2).png>)
 
 Using statistical parameters in the query involves four fields that you can set:
 

@@ -62,7 +62,7 @@ Statistical parameters allow you to filter through your Lambda invocations using
 * Duration
 * Last Invocation Time
 
-![](<../../.gitbook/assets/image (67).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 Using statistical parameters in the query involves four fields that you can set:
 

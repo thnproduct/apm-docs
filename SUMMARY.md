@@ -161,7 +161,6 @@
 
 * [Integration Options for .NET SDK](.net/integration-options.md)
 * [Integration Options for .NET SDK in Containers and VMs](.net/integration-options-for-containers-and-vms.md)
-* [Upgrading from v1.x to v2.x](.net/upgrading-from-v1.x-to-v2.x.md)
 * [Configuration Options for .NET SDK](.net/configuration-options/README.md)
   * [Configuring .NET SDK](.net/configuration-options/agent-configurations.md)
   * [Configuring Traces for .NET SDK](.net/configuration-options/trace-configurations.md)

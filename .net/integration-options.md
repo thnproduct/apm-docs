@@ -1,16 +1,16 @@
 # Integration Options for .NET SDK
 
 {% hint style="warning" %}
-#### Upgrading from v1.x to 2.x
+**Upgrading from v1.x to 2.x**
 
-In **v2.x**, we've made some changes to our agent as we've started to support **.NET Core 2.1** applications as well. \
+In **v2.x**, we've made some changes to our agent as we've started to support **.NET Core 2.1** applications as well.\
 \
-If you are using the Thundra agent **v1.x** already, make sure to check what needs to be changed [**here**](upgrading-from-v1.x-to-v2.x.md).
+If you are using the Thundra agent **v1.x** already, make sure to check what needs to be changed [**here**](broken-reference).
 {% endhint %}
 
 {% tabs %}
 {% tab title="Serverless Framework" %}
-### **Serverless Framework**
+#### **Serverless Framework**
 
 **Step 1: Add Thundra NuGet package**
 
@@ -53,7 +53,7 @@ Using this method, you can connect Thundra to your functions by modifying the co
 {% endtab %}
 
 {% tab title="Serverless Plugin" %}
-### Serverless Plugin
+#### Serverless Plugin
 
 **Step 1: Install Thundra’s Serverless Plugin**
 
@@ -61,7 +61,7 @@ Using this method, you can connect Thundra to your functions by modifying the co
 npm install serverless-plugin-thundra
 ```
 
-**Step 2: Add Thundra's Serverless Plugin in the serverless.yml File** \
+**Step 2: Add Thundra's Serverless Plugin in the serverless.yml File**\
 \
 After installing Thundra’s serverless plugin, you need to add it under the plugins section of your serverless.yml file in order to specify it as a plugin for your serverless environment.
 
@@ -99,11 +99,11 @@ After generating your first invocation, the “Next” button will appear in the
 For more information, visit the [Thundra Serverless Plugin](https://docs.thundra.io/deployment-integrations/serverless-framework) page.
 {% endhint %}
 
-####
+
 {% endtab %}
 
 {% tab title="AWS SAM" %}
-### AWS S**AM**
+#### AWS S**AM**
 
 **Step 1: Add the Thundra NuGet Package**
 
@@ -151,9 +151,9 @@ Using this method, you can connect Thundra to your functions by modifying the co
 {% endtab %}
 
 {% tab title="AWS CDK" %}
-### AWS CDK
+#### AWS CDK
 
-**Step 1: Add the Thundra NuGet Package to Your Lambda**&#x20;
+**Step 1: Add the Thundra NuGet Package to Your Lambda**
 
 The .NET Thundra agent can be easily downloaded with the command shown below:
 
@@ -165,7 +165,7 @@ dotnet add package Thundra.Agent --version $LATEST_VERSION
 
 Similarly, you can add the agent via the NuGet Package Manager of your IDE (if available). For example, Visual Studio allows you to add packages through the IDE itself; a simple search for Thundra .NET will allow you to procure and add the correct agent to your project.
 
-#### **Step 2: Apply Configuration Changes to Your Function Properties**
+**Step 2: Apply Configuration Changes to Your Function Properties**
 
 * Add the `thundra_apiKey` environment variable with your Thundra API key.
 
@@ -264,15 +264,15 @@ namespace YourNameSpace
 }
 ```
 
-#### ****
+**\*\*\*\***
 
-#### **Step 2: Build and Deploy**
+**Step 2: Build and Deploy**
 
 ```bash
 dotnet build src && cdk deploy
 ```
 
-#### Step 3: Invoke Your Function
+**Step 3: Invoke Your Function**
 
 Now you can invoke your Lambda function and see the details of your invocation in the Thundra console!
 {% endtab %}
@@ -324,18 +324,8 @@ namespace ThundraSample
 
 Next, you should change your handler to `<MyAssembly>::<MyNamespace>.<MyClass>::HandleRequest`.
 
-It is a common mistake to utilize the hook method `DoHandleRequest` as the handler. In order to initialize Thundra, you must change your handler to `HandleRequest`, which resides in the base class (`LambdaRequestHandler`).&#x20;
+It is a common mistake to utilize the hook method `DoHandleRequest` as the handler. In order to initialize Thundra, you must change your handler to `HandleRequest`, which resides in the base class (`LambdaRequestHandler`).
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
-
-
-
-
-
-
-****
+***
