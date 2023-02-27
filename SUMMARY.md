@@ -180,7 +180,7 @@
 * [Koa.js](web-frameworks/koa.js.md)
 * [Django](web-frameworks/django.md)
 * [Flask](web-frameworks/flask.md)
-* [.NET Core 3.1](web-frameworks/.net-core-3.1.md)
+* [.NET Web API](web-frameworks/.net.md)
 * [Fastapi](web-frameworks/fastapi.md)
 * [Tornado](web-frameworks/tornado.md)
 
